@@ -1,17 +1,18 @@
+<<<<<<< HEAD
 import os
+=======
+>>>>>>> 9e743b7770bb7660fe486a06631b95a51c206e4e
 import subprocess
 import time
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-chrome_driver = r'C:\Users\11470\Downloads\chromedriver_win32\chromedriver'
-
+chrome_driver = r'C:\Users\11470\Downloads\chromedriver_win32\chromedriver.exe'
 
 cmd = '"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe" ' \
       '--remote-debugging-port=9222 ' \
       '--user-data-dir="D:\\Data\\Reptile\\UserDate"'
-
 
 def start_reptile(link, path):
     print("Starting")
@@ -36,4 +37,3 @@ def start_reptile(link, path):
               + " -c copy " + path + file_name + ".mp4"
     print(command)
     os.system(command)
-
